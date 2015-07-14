@@ -6,7 +6,7 @@ Summary:	Library for generating documents in EPUB format
 Summary(pl.UTF-8):	Biblioteka do generowania dokumentów w formacie EPUB
 Name:		libepubgen
 Version:	0.0.0
-Release:	1
+Release:	2
 License:	MPL v2.0
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/libepubgen/%{name}-%{version}.tar.xz
