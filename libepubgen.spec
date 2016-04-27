@@ -1,12 +1,12 @@
 #
 # Conditional build:
 %bcond_without	static_libs	# don't build static library
-#
+
 Summary:	Library for generating documents in EPUB format
 Summary(pl.UTF-8):	Biblioteka do generowania dokumentów w formacie EPUB
 Name:		libepubgen
 Version:	0.0.0
-Release:	2
+Release:	3
 License:	MPL v2.0
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/libepubgen/%{name}-%{version}.tar.xz
@@ -60,6 +60,9 @@ Statyczna biblioteka libepubgen.
 Summary:	libepubgen API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki libepubgen
 Group:		Documentation
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 libepubgen API documentation.
