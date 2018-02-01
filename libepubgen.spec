@@ -5,12 +5,12 @@
 Summary:	Library for generating documents in EPUB format
 Summary(pl.UTF-8):	Biblioteka do generowania dokumentów w formacie EPUB
 Name:		libepubgen
-Version:	0.0.0
-Release:	3
+Version:	0.1.0
+Release:	1
 License:	MPL v2.0
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/libepubgen/%{name}-%{version}.tar.xz
-# Source0-md5:	21d1d23f609da2e9ed24629b8ae96584
+# Source0-md5:	02389510c9c17f8884a3391df141c369
 URL:		http://libepubgen.sourceforge.net/
 BuildRequires:	boost-devel
 BuildRequires:	librevenge-devel >= 0.0
@@ -100,19 +100,19 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
-%attr(755,root,root) %{_libdir}/libepubgen-0.0.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libepubgen-0.0.so.0
+%attr(755,root,root) %{_libdir}/libepubgen-0.1.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libepubgen-0.1.so.1
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libepubgen-0.0.so
-%{_includedir}/libepubgen-0.0
-%{_pkgconfigdir}/libepubgen-0.0.pc
+%attr(755,root,root) %{_libdir}/libepubgen-0.1.so
+%{_includedir}/libepubgen-0.1
+%{_pkgconfigdir}/libepubgen-0.1.pc
 
 %if %{with static_libs}
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/libepubgen-0.0.a
+%{_libdir}/libepubgen-0.1.a
 %endif
 
 %files apidocs
