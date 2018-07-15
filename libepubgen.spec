@@ -5,16 +5,17 @@
 Summary:	Library for generating documents in EPUB format
 Summary(pl.UTF-8):	Biblioteka do generowania dokumentów w formacie EPUB
 Name:		libepubgen
-Version:	0.1.0
+Version:	0.1.1
 Release:	1
 License:	MPL v2.0
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/libepubgen/%{name}-%{version}.tar.xz
-# Source0-md5:	02389510c9c17f8884a3391df141c369
+# Source0-md5:	6e710ab7e45ecdecac4983db18dd2629
 URL:		http://libepubgen.sourceforge.net/
 BuildRequires:	boost-devel
+BuildRequires:	doxygen
 BuildRequires:	librevenge-devel >= 0.0
-BuildRequires:	libstdc++-devel
+BuildRequires:	libstdc++-devel >= 6:4.7
 BuildRequires:	pkgconfig >= 1:0.20
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
@@ -36,7 +37,7 @@ Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libepubgen
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	librevenge-devel >= 0.0
-Requires:	libstdc++-devel
+Requires:	libstdc++-devel >= 6:4.7
 
 %description devel
 Header files for libepubgen library.
